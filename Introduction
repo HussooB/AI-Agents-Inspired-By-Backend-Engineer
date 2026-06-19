@@ -7,6 +7,7 @@ Artificial Intelligence (AI)
 
 ##Let's Define Each Layer 
 
+
 1️⃣ Artificial Intelligence (AI) — The Umbrella Term
 Definition: Any technique that enables computers to mimic human intelligence.
 Includes:
@@ -22,6 +23,8 @@ AI is like "Software Development" — the broadest category encompassing everyth
 Example:
 A simple chatbot that uses if message == "hello" then return "hi" is AI (but NOT ML).
 Chess-playing computer using search trees = AI.
+
+
 2️⃣ Machine Learning (ML) — A Subset of AI
 Definition: Algorithms that learn from data instead of being explicitly programmed.
 Key Idea:
@@ -39,6 +42,9 @@ Example:
 Spam filter that learns from thousands of labeled emails (spam/not spam)
 Recommendation system that learns user preferences from past behavior
 NOT ML: A hardcoded rule like if email contains "WINNER" then mark as spam
+
+
+
 3️⃣ Deep Learning (DL) — A Subset of ML
 Definition: Machine learning using artificial neural networks with many layers (hence "deep").
 Key Idea:
@@ -55,6 +61,9 @@ Image recognition (identifying cats in photos)
 Speech-to-text conversion
 Language translation
 NOT DL: A simple linear regression predicting house prices based on square footage
+
+
+
 4️⃣ Generative AI — A Subset of Deep Learning
 Definition: AI that creates new content (text, images, code, audio) rather than just analyzing or classifying existing data.
 Key Idea:
