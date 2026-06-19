@@ -1,0 +1,85 @@
+DATA TYPES
+Labeled vs Unlabeled Data
+Labeled Data
+Data that comes with the "answer key" or target variable.
+Example:
+
+// Labeled dataset for spam detection
+[
+  { email: "Win money now!!!", label: "spam" },           // ← Label
+  { email: "Meeting at 3pm", label: "not_spam" },         // ← Label
+  { email: "Claim your prize", label: "spam" }            // ← Label
+]
+
+Real-world analogy:
+Like a database where every record has a category_id or status field already filled in.
+Unlabeled Data
+Data without answers/tags.
+Example:
+
+// Unlabeled dataset
+[
+  { email: "Win money now!!!" },
+  { email: "Meeting at 3pm" },
+  { email: "Claim your prize" }
+  // No labels! Just raw data.
+]
+
+Real-world analogy:
+Like a raw log file with no categorization — just pure data.
+Structured vs Unstructured Data
+Structured Data
+Organized, tabular data with clear schema.
+Examples:
+SQL database tables
+CSV files
+Excel spreadsheets
+JSON with fixed schema
+
+-- Structured data (PostgreSQL table)
+CREATE TABLE users (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100),
+    age INTEGER,
+    email VARCHAR(100)
+);
+
+
+Unstructured Data
+No predefined format or organization.
+Examples:
+Text documents (emails, articles)
+Images
+Audio files
+Videos
+Social media posts
+Real-world analogy:
+Structured = Your Prisma schema with defined models
+Unstructured = A folder of random PDFs, images, and text files
+🔗 How Data Types Connect to ML Learning Types
+
+┌─────────────────────────────────────────────────────────┐
+│                    ML LEARNING TYPES                     │
+├─────────────────────────────────────────────────────────┤
+│                                                          │
+│  SUPERVISED LEARNING                                     │
+│  ├─ Uses: LABELED data                                   │
+│  ├─ Can use: Structured OR Unstructured                  │
+│  └─ Example: Spam detection (labeled emails)             │
+│                                                          │
+│  UNSUPERVISED LEARNING                                   │
+│  ├─ Uses: UNLABELED data                                 │
+│  ├─ Can use: Structured OR Unstructured                  │
+│  └─ Example: Customer segmentation (no labels)           │
+│                                                          │
+│  SELF-SUPERVISED LEARNING                                │
+│  ├─ Uses: UNLABELED data (creates own labels)            │
+│  ├─ Mostly: Unstructured (text, images)                  │
+│  └─ Example: Predicting next word in sentence            │
+│                                                          │
+│  REINFORCEMENT LEARNING                                  │
+│  ├─ Uses: Rewards/penalties (not traditional labels)     │
+│  ├─ Learns from: Interaction with environment            │
+│  └─ Example: AI learning to play chess                   │
+│                                                          │
+└─────────────────────────────────────────────────────────┘
