@@ -1,0 +1,155 @@
+LEARNING TYPES
+
+1. Supervised Learning
+Concept: Learning with a teacher (labels).
+Backend analogy:
+Like unit tests — you have inputs and expected outputs. The model learns to match them.
+Example:
+# Training a house price predictor
+Input:  {size: 1500, bedrooms: 3, location: "downtown"}
+Label:  {price: 450000}  # ← The "answer"
+
+Model learns: size + bedrooms + location → price
+
+Common tasks:
+Classification (spam/not spam)
+Regression (predicting prices)
+2. Unsupervised Learning
+Concept: Finding patterns without answers.
+Backend analogy:
+Like running analytics queries to find clusters in your data without knowing what you'll find.
+Example:
+
+# Customer segmentation (no labels)
+Input: [customer1_purchases, customer2_purchases, ...]
+No labels! 
+
+Model finds: 
+  - Group A: Budget shoppers
+  - Group B: Luxury buyers
+  - Group C: Occasional buyers
+
+Common tasks:
+Clustering (grouping similar items)
+Dimensionality reduction
+Anomaly detection
+3. Self-Supervised Learning ⭐ (CRITICAL FOR LLMS!)
+Concept: The data creates its own labels automatically.
+This is how LLMs are trained!
+Example for text:# Original sentence (unlabeled)
+"The cat sat on the ___"
+
+# Self-supervised creates label by masking a word
+Input:  "The cat sat on the [MASK]"
+Label:  "mat"  # ← Automatically extracted from the sentence!
+
+# Another example
+Input:  "The ___ sat on the mat"
+Label:  "cat"
+
+Backend analogy:
+Like generating test cases from your production data automatically.
+Why it's powerful:
+No human labeling needed!
+Can use massive amounts of raw text from the internet
+This is how GPT, Claude, Llama learned language
+4. Reinforcement Learning (RL)
+Concept: Learning through trial and error with rewards.
+Backend analogy:
+Like A/B testing, but the system automatically optimizes based on user engagement metrics.
+Example:
+
+# Teaching AI to play a game
+Action: Move piece to E4
+Reward: +0.1 (slightly better position)
+
+Action: Move piece to H5  
+Reward: -0.5 (bad move, lost queen)
+
+Model learns: Which actions maximize total reward
+
+Real-world use:
+Game AI (AlphaGo, Chess)
+Robotics
+RLHF (Reinforcement Learning from Human Feedback) — used to make LLMs helpful and safe
+🧠 PART 3: NEURAL NETWORKS & DEEP LEARNING
+What is a Neural Network?
+Concept: A mathematical system inspired by the human brain.
+Backend analogy:
+Think of it as a complex function pipeline with tunable parameters.
+
+// Simplified neural network in code
+function neuralNetwork(input) {
+  // Layer 1
+  let hidden1 = activate(weights1 * input + bias1);
+  
+  // Layer 2
+  let hidden2 = activate(weights2 * hidden1 + bias2);
+  
+  // Output layer
+  let output = activate(weights3 * hidden2 + bias3);
+  
+  return output;
+}
+
+What are Nodes (Neurons)?
+Node/Neuron: The basic computational unit.
+What it does:
+Receives inputs
+Multiplies by weights (importance)
+Adds bias (offset)
+Applies activation function (non-linearity)
+Passes to next layer
+Visual:
+
+         Input 1 ──┐
+                   ↓
+         Input 2 ──→ [ NODE ] → Output
+                   ↑            (to next layer)
+         Input 3 ──┘
+         
+Inside the node:
+  output = activation( (input1 × weight1) + 
+                       (input2 × weight2) + 
+                       (input3 × weight3) + 
+                       bias )
+
+Backend analogy:
+A node is like a microservice that:
+Receives data from multiple sources
+Processes it with configured weights (business logic)
+Returns a transformed result
+What is Deep Learning?
+Simple definition: Neural networks with many layers (hence "deep").
+
+Shallow Network:          Deep Network:
+Input → Hidden → Output   Input → H1 → H2 → H3 → H4 → Output
+(1-2 layers)              (Many layers = "deep")
+
+Why deep?
+Each layer learns different levels of abstraction
+Early layers: Simple patterns (edges in images, word stems in text)
+Middle layers: Complex patterns (shapes, phrases)
+Deep layers: High-level concepts (faces, sentence meaning)
+Backend analogy:
+Like a microservices architecture where:
+Service 1: Validates input
+Service 2: Transforms data
+Service 3: Applies business logic
+Service 4: Formats output
+Each service builds on the previous one
+
+PART 4: MODERN AI ARCHITECTURES
+The Relationship Chain
+FOUNDATION MODELS (broadest)
+    │
+    ├── LLMs (Large Language Models)
+    │       │
+    │       └── Built with TRANSFORMERS
+    │
+    ├── Diffusion Models
+    │       │
+    │       └── Used for IMAGE GENERATION
+    │
+    └── Other foundation models (audio, video, etc.)
+
