@@ -1,0 +1,76 @@
+LEARNING TYPES EXPLAINED
+1. Supervised Learning
+Concept: Learning with a teacher (labels).
+Backend analogy:
+Like unit tests — you have inputs and expected outputs. The model learns to match them.
+Example:
+# Training a house price predictor
+Input:  {size: 1500, bedrooms: 3, location: "downtown"}
+Label:  {price: 450000}  # ← The "answer"
+
+Model learns: size + bedrooms + location → price
+
+Common tasks:
+Classification (spam/not spam)
+Regression (predicting prices)
+2. Unsupervised Learning
+Concept: Finding patterns without answers.
+Backend analogy:
+Like running analytics queries to find clusters in your data without knowing what you'll find.
+Example:
+
+# Customer segmentation (no labels)
+Input: [customer1_purchases, customer2_purchases, ...]
+No labels! 
+
+Model finds: 
+  - Group A: Budget shoppers
+  - Group B: Luxury buyers
+  - Group C: Occasional buyers
+
+Common tasks:
+Clustering (grouping similar items)
+Dimensionality reduction
+Anomaly detection
+3. Self-Supervised Learning ⭐ (CRITICAL FOR LLMS!)
+Concept: The data creates its own labels automatically.
+This is how LLMs are trained!
+Example for text:
+# Original sentence (unlabeled)
+"The cat sat on the ___"
+
+# Self-supervised creates label by masking a word
+Input:  "The cat sat on the [MASK]"
+Label:  "mat"  # ← Automatically extracted from the sentence!
+
+# Another example
+Input:  "The ___ sat on the mat"
+Label:  "cat"
+
+Backend analogy:
+Like generating test cases from your production data automatically.
+Why it's powerful:
+No human labeling needed!
+Can use massive amounts of raw text from the internet
+This is how GPT, Claude, Llama learned language
+4. Reinforcement Learning (RL)
+Concept: Learning through trial and error with rewards.
+Backend analogy:
+Like A/B testing, but the system automatically optimizes based on user engagement metrics.
+Example:
+
+# Teaching AI to play a game
+Action: Move piece to E4
+Reward: +0.1 (slightly better position)
+
+Action: Move piece to H5  
+Reward: -0.5 (bad move, lost queen)
+
+Model learns: Which actions maximize total reward
+
+Real-world use:
+Game AI (AlphaGo, Chess)
+Robotics
+RLHF (Reinforcement Learning from Human Feedback) — used to make LLMs helpful and safe
+
+
