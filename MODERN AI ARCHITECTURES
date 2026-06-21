@@ -1,0 +1,14 @@
+MODERN AI ARCHITECTURES
+The Relationship Chain
+
+FOUNDATION MODELS (broadest)
+    │
+    ├── LLMs (Large Language Models)
+    │       │
+    │       └── Built with TRANSFORMERS
+    │
+    ├── Diffusion Models
+    │       │
+    │       └── Used for IMAGE GENERATION
+    │
+    └── Other foundation models (audio, video, etc.)
