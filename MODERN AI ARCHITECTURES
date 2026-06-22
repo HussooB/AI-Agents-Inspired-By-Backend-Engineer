@@ -12,3 +12,23 @@ FOUNDATION MODELS (broadest)
     │       └── Used for IMAGE GENERATION
     │
     └── Other foundation models (audio, video, etc.)
+
+
+┌─────────────────────────────────────────────────────────┐
+│  🎨 LAYER 3: GENERATIVE AI                              │
+│  "Ready-to-use AI brains"                               │
+│  → Amazon Bedrock, Amazon Q, JumpStart                  │
+│  → YOU WILL LIVE HERE AS AGENTIC AI ENGINEER            │
+├─────────────────────────────────────────────────────────┤
+│  🔧 LAYER 2: AI/ML SERVICES                             │
+│  "Pre-built microservices for specific tasks"           │
+│  → Comprehend, Translate, Textract, Lex, Polly, etc.    │
+│  → Call these APIs from your agents                     │
+├─────────────────────────────────────────────────────────┤
+│  🛠️  LAYER 1: ML FRAMEWORKS                            │
+│  "Build your own AI from scratch"                       │
+│  → Amazon SageMaker AI                                  │
+│  → For ML engineers training custom models              │
+└─────────────────────────────────────────────────────────┘
+
+Bottom (not shown): AWS Infrastructure (EC2, GPUs, networking)
