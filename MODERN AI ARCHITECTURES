@@ -32,3 +32,43 @@ FOUNDATION MODELS (broadest)
 └─────────────────────────────────────────────────────────┘
 
 Bottom (not shown): AWS Infrastructure (EC2, GPUs, networking)
+
+
+LAYER 1: ML Frameworks — "The ML Engineer's Workshop"
+Amazon SageMaker AI
+What it is: A complete platform to build, train, and deploy your own ML models from scratch.
+Backend analogy:
+Like setting up your own Kubernetes cluster to run custom microservices. Full control, but you manage everything.
+What you do here:
+Write training code in Python (PyTorch, TensorFlow)
+Provision GPU instances
+Train models on your data
+Deploy as endpoints
+Monitor performance
+Who uses this:
+ML Engineers
+Data Scientists
+Researchers training custom models
+🎯 Will YOU use this?
+Rarely. As an Agentic AI Engineer, you'll mostly use pre-trained models. But good to know it exists for when you need custom training.
+🔧 LAYER 2: AI/ML Services — "The API Toolbox"
+These are pre-built, managed services you call via API. Think of them like AWS-hosted microservices that do one specific AI task well.
+Quick Tour of Each Service
+
+LAYER 3: GENERATIVE AI — "YOUR HOME BASE" ⭐
+This is where you'll spend 90% of your time as an Agentic AI Engineer.
+1. Amazon SageMaker JumpStart
+What it is: A hub of pre-trained foundation models you can deploy with one click.
+Backend analogy:
+Like a package manager (npm) for AI models. Browse, select, deploy.
+What's inside:
+Hundreds of open-source models (Llama, Mistral, Stable Diffusion)
+Ready-to-deploy endpoints
+Fine-tuning templates
+When to use:
+You want an open-source model (not Claude/GPT)
+You need full control over the model
+You want to fine-tune on your own infrastructure
+2. Amazon Bedrock ⭐⭐⭐ (MOST IMPORTANT FOR YOU)
+What it is: A single API to access foundation models from multiple providers (Anthropic, Meta, Mistral, Amazon, etc.).
+
