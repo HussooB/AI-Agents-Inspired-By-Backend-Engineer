@@ -4,7 +4,7 @@ Labeled Data
 Data that comes with the "answer key" or target variable.
 Example:
 
-// Labeled dataset for spam detection
+Labeled dataset for spam detection
 [
   { email: "Win money now!!!", label: "spam" },           // ← Label
   { email: "Meeting at 3pm", label: "not_spam" },         // ← Label
@@ -17,7 +17,7 @@ Unlabeled Data
 Data without answers/tags.
 Example:
 
-// Unlabeled dataset
+Unlabeled dataset
 [
   { email: "Win money now!!!" },
   { email: "Meeting at 3pm" },
