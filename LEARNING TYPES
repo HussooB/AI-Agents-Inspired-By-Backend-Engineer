@@ -6,8 +6,8 @@ Backend analogy:
 Like unit tests — you have inputs and expected outputs. The model learns to match them.
 Example:
 # Training a house price predictor
-Input:  {size: 1500, bedrooms: 3, location: "downtown"}
-Label:  {price: 450000}  # ← The "answer"
+Input:{size: 1500, bedrooms: 3, location: "downtown"}
+Label:{price: 450000}   ← The "answer"
 
 Model learns: size + bedrooms + location → price
 
