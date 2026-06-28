@@ -4,7 +4,7 @@ Concept: Learning with a teacher (labels).
 Backend analogy:
 Like unit tests — you have inputs and expected outputs. The model learns to match them.
 Example:
-# Training a house price predictor
+Training a house price predictor
 Input:  {size: 1500, bedrooms: 3, location: "downtown"}
 Label:  {price: 450000}  # ← The "answer"
 
