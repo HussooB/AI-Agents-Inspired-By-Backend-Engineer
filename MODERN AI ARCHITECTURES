@@ -15,17 +15,17 @@ FOUNDATION MODELS (broadest)
 
 
 ┌─────────────────────────────────────────────────────────┐
-│  LAYER 3: GENERATIVE AI                              │
+│  LAYER 3: GENERATIVE AI                              
 │  "Ready-to-use AI brains"                               │
 │  → Amazon Bedrock, Amazon Q, JumpStart                  │
 │  → YOU WILL LIVE HERE AS AGENTIC AI ENGINEER            │
 ├─────────────────────────────────────────────────────────┤
-│  LAYER 2: AI/ML SERVICES                             │
+│  LAYER 2: AI/ML SERVICES                             
 │  "Pre-built microservices for specific tasks"           │
 │  → Comprehend, Translate, Textract, Lex, Polly, etc.    │
 │  → Call these APIs from your agents                     │
 ├─────────────────────────────────────────────────────────┤
-│  LAYER 1: ML FRAMEWORKS                            │
+│  LAYER 1: ML FRAMEWORKS                            
 │  "Build your own AI from scratch"                       │
 │  → Amazon SageMaker AI                                  │
 │  → For ML engineers training custom models              │
